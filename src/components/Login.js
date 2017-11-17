@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { graphql, compose } from 'react-apollo';
-import gql, { resetCaches } from 'graphql-tag';
+import gql from 'graphql-tag';
 import { GC_USER_ID, GC_AUTH_TOKEN } from '../constants';
 
 const SIGNUP_USER_MUTATION = gql`

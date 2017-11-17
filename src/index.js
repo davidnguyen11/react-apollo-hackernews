@@ -4,12 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import './styles/index.css';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
-import { GC_USER_ID, GC_AUTH_TOKEN } from './constants';
+import { GC_AUTH_TOKEN } from './constants';
 
 // 1
 import { ApolloLink, split } from 'apollo-client-preset';
 import { WebSocketLink } from 'apollo-link-ws';
-import { SubscriptionClient } from 'subscriptions-transport-ws';
 import { getMainDefinition } from 'apollo-utilities';
 import { ApolloProvider } from 'react-apollo';
 import { ApolloClient } from 'apollo-client';

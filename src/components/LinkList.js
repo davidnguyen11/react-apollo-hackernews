@@ -4,7 +4,6 @@ import gql from 'graphql-tag';
 
 import Link from './Link';
 import { LINKS_PER_PAGE } from '../constants';
-import { log } from 'util';
 
 export const ALL_LINKS_QUERY = gql`
   query AllLinksQuery($first: Int, $skip: Int, $orderBy: LinkOrderBy) {
@@ -178,7 +177,7 @@ class LinkList extends Component {
             <Link
               updateStoreAfterVote={this._updateCacheAfterVote}
               key={link.id}
-              index={index}
+              index={page ? (page - 1) * LINKS_PER_PAGE + index : index}
               link={link}
             />
           ))}
