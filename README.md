@@ -1,5 +1,5 @@
 # React apollo hackernews
-This sample project follow the instruction from  [https://www.howtographql.com/](https://www.howtographql.com/)
+This sample project follow the instruction from  [https://www.howtographql.com/react-apollo/0-introduction/](https://www.howtographql.com/react-apollo/0-introduction/)
 
 # set up
 
